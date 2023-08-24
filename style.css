@@ -1,0 +1,310 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 6rem;
+  width: 100vw;
+  background-color: #f86f03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+nav .navlogo {
+  font-size: 3rem;
+  padding-left: 1rem;
+  margin-left: 2rem;
+
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+nav .navlogo span {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding-left: 1rem;
+}
+nav .navlogo span:hover {
+  font-size: 2.5rem;
+  transition: all ease 0.3s;
+  color: #4750bb;
+}
+
+nav .navitems ul {
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+  gap: 50px;
+  padding-right: 100px;
+}
+nav .navitems ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  position: relative;
+}
+nav .navitems ul li a:hover {
+  color: #4750bb;
+}
+nav .navitems ul li a::after {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  height: 0.2rem;
+  width: 0%;
+  background-color: #4750bb;
+  transition: all ease 0.5s;
+}
+nav .navitems ul li a:hover::after {
+  width: 100%;
+}
+
+main #home {
+  z-index: -5;
+  background-color: #fff6f4;
+  font-size: 3rem;
+  height: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+main #home .leftsection{
+  z-index: 3;
+}
+main #home .leftsection p {
+  line-height: 3.5rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  width: 50rem;
+}
+main #home .leftsection #name {
+  color: #525fe1;
+  font-size: 3rem;
+  font-weight: 500;
+}
+main #home .leftsection #element {
+  color: #ff9900;
+}
+main #home .leftsection #about {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.8rem;
+  color: rgb(51, 51, 51);
+  font-size: 1.9rem;
+}
+main #home .leftsection #resume {
+  padding: 1rem;
+  background-color: #f86f03;
+  border-color: #f86f03;
+  border-radius: 0.8rem;
+}
+
+main #home .leftsection #resume a {
+  color: #fff6f4;
+  text-decoration: none;
+  font-weight: 500;
+}
+main #home .rightsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+
+}
+
+main #home .rightsection img {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  height: 40rem;
+  width: 40vw;
+}
+
+main #services {
+  background-color: #fff6f4;
+  height: 100vh;
+}
+
+  /* services */
+
+  #serviceslogo{
+    font-size: 5rem;
+    color: #f86f03;
+    font-weight: 600;
+  }
+  #Servicesimages{
+    display: flex;
+    height: 40rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    background-color: #7471c5;
+  }
+  nav .navitems ul li a {
+    display: none;
+  }
+  main #home {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+   
+    padding: 12rem 2rem 2rem 3rem;
+    height: 100vh;
+  }
+
+  main #home .leftsection p {
+    width: 100%;
+  }
+  main #home .rightsection img {
+    height: 25rem;
+    width: 30rem;
+    padding: 0%;
+    margin-bottom: 3rem;
+    
+  }
+  main #home .leftsection #resume {
+    margin-top: 1rem;
+  }
+  main #home .leftsection #resume:hover {
+    background-color: #7471c5;
+  }
+  main #home .leftsection #name {
+    color: #ff9900;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  main #home .leftsection #element {
+    color: #4750bb;
+  }
+  nav .navlogo {
+    margin-left: 1rem;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablets ipads responsive */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  nav .navitems ul li a {
+    display: none;
+  }
+  main #home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10rem 0rem 0rem 0rem;
+    height: 100vh;
+  }
+  main #home .leftsection {
+    height: 30rem;
+  }
+  main #home .rightsection img {
+    height: 40rem;
+    width: 40rem;
+    padding-left: 1rem;
+  }
+  nav .navlogo {
+    margin-left: 1rem;
+  }
+}
+
+/* small screens laptops responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  main #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  main #home .leftsection p {
+    width: 40rem;
+  }
+  main #home .rightsection img {
+    height: 40rem;
+    width: 40vw;
+  }
+  nav .navlogo {
+    margin-left: 1rem;
+  }
+}

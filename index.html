@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container-which holds the entire content of the website -->
+    <div class="container">
+      <!-- navsection -->
+      <nav>
+        <div class="navlogo"><span>k</span>arthik</div>
+        <div class="navitems">
+          <ul>
+            <li><a href="#home" id="links">Home</a></li>
+            <li><a href="#services" id="links">services</a></li>
+            <li><a href="" id="links">My work</a></li>
+            <li><a href="" id="links">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <!-- home -->
+        <section id="home">
+          <div class="leftsection">
+            <p>
+              hi, There <br />i'm <span id="name">karthik,</span><br />
+              <span id="element"></span>
+            </p>
+            <p id="about">
+              i'm a dedicated and enthusiastic web developer with a strong passion for creating engaging and dynamic websites using html & css
+            </p>
+            <a
+              href="https://drive.google.com/file/d/141mekYIBS8D9G20_OChvhmeAu38Kki3F/view?usp=drivesdk"
+              target="_blank"
+            >
+              <button id="resume" ><a href="karthik.pdf" download>Download Resume</a></button>
+          </div>
+          <div class="rightsection">
+            <img src="karthikright (2).png"/>
+          </div>
+        </section>
+       <hr>
+
+        <!-- services -->
+        <section id="services">
+            <div id="serviceslogo">
+              services
+            </div>
+           
+            </div>
+        </section>
+      </main>
+     
+    </div>
+
+    <!-- javascript type animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Java Developer,",
+          "AWS DevOps Engineer,",
+          "Video Editor,",
+          "WebDeveloper.",
+        ],
+        typeSpeed: 90,
+      });
+    </script>
+  </body>
+</html>
