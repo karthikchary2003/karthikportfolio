@@ -137,24 +137,6 @@ main #home .rightsection img {
   width: 40vw;
 }
 
-main #services {
-  background-color: #fff6f4;
-  height: 100vh;
-}
-
-  /* services */
-
-  #serviceslogo{
-    font-size: 5rem;
-    color: #f86f03;
-    font-weight: 600;
-  }
-  #Servicesimages{
-    display: flex;
-    height: 40rem;
-  }
-
-
 
 
 
